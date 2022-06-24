@@ -1,0 +1,42 @@
+{
+    "name": "@fdsu/workspace",
+    "version": "0.0.1",
+    "description": "flat design store util workspace",
+    "repository": "https://github.com/halo951/fdsu",
+    "author": "Halo <1654403734@qq.com>",
+    "license": "MIT",
+    "private": true,
+    "sideEffects": false,
+    "bugs": {
+        "url": "https://github.com/halo951/fdsu/issues"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "c": "ts-node --project tsconfig.node.json scripts/create.ts",
+        "sync:pkg": "ts-node  --project tsconfig.node.json scripts/sync-package.ts",
+        "size": "ts-node --project tsconfig.node.json scripts/total-size.ts",
+        "test": "jest --coverage",
+        "lint": "",
+        "lint:fix": "prettier -w **.ts **.md **.json",
+        "build": "",
+        "changelog": "",
+        "release": ""
+    },
+    "devDependencies": {
+        "@types/glob": "^7.2.0",
+        "@types/jest": "^28.1.3",
+        "@types/prettier": "^2.6.3",
+        "@types/rimraf": "^3.0.2",
+        "brotli-wasm": "^1.2.0",
+        "chalk": "4",
+        "glob": "^8.0.3",
+        "markdown-table": "2.0.0",
+        "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
+        "ts-node": "^10.8.1",
+        "tslib": "^2.4.0",
+        "typescript": "^4.7.3"
+    }
+}

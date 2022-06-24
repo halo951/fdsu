@@ -1,0 +1,31 @@
+{
+    "name": "fdsu",
+    "description": "☆ Using flat design store to solve the problem of service abstraction. Support vue, react, miniprogram.",
+    "version": "0.0.1",
+    "keywords": [
+        "store"
+    ],
+    "main": "dist/cjs/index.js",
+    "module": "dist/es/index.js",
+    "typings": "typings/index.d.ts",
+    "sideEffects": false,
+    "author": "Halo <1654403734@qq.com>",
+    "repository": "https://github.com/halo951/fdsu",
+    "bugs": {
+        "url": "https://github.com/halo951/fdsu/issues"
+    },
+    "license": "MIT",
+    "scripts": {
+        "clean": "rimraf dist && rimraf typings",
+        "build": "yarn clean && rollup --config ../../rollup.config.ts --configPlugin typescript2",
+        "lint:fix": "prettier -w **.ts **.md **.json",
+        "test": "cd ../../ & yarn test"
+    },
+    "dependencies": {
+        "klona": "^2.0.5",
+        "set-value": "^4.1.0"
+    },
+    "devDependencies": {
+        "@types/set-value": "^4.0.1"
+    }
+}

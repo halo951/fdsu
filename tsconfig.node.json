@@ -1,0 +1,24 @@
+{
+    "include": ["scripts/*.ts"],
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "types": ["node"],
+        "paths": {
+            "@/*": ["./scripts/*"]
+        },
+
+        "sourceMap": false,
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "strict": false,
+        "skipDefaultLibCheck": true,
+        "declaration": false,
+
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true
+    }
+}
